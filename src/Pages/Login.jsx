@@ -9,8 +9,8 @@ export function Login(){
                 <img className="h-screen w-full object-cover" src={ImgLogin} alt="Imagem Vitrine Login" />
             </div>
             <div className="sm:flex flex-col bg-gray-100 p-8 justify-center">
-                <div className="flex justify-center items-start">
-                    <img className="h-56 w-1/2" src={ImgLogo} alt="Imagem do Login" />
+                <div className="flex justify-center items-center">
+                    <img className="h-56 max-w-sm" src={ImgLogo} alt="Imagem da Logo" />
                 </div>
                 
                 <div className="mt-12 flex flex-col items-center justify-center">     
