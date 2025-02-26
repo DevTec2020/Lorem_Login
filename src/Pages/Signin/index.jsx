@@ -17,7 +17,6 @@ export function Signin() {
         const sucesso = RealizarLogin(usuario, senha);
 
         if (sucesso) {
-            console.log("Redirecionando para outra página...");
             navigate("/home");
         }
     }
@@ -40,6 +39,7 @@ export function Signin() {
                                 type="text"
                                 value={usuario}
                                 onChange={(e) => setUsuario(e.target.value)}
+                                required
                                 className="border rounded-lg w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-950"
                             />
                         </div>
@@ -49,6 +49,7 @@ export function Signin() {
                                 type="password"
                                 value={senha}
                                 onChange={(e) => setSenha(e.target.value)}
+                                required
                                 className="border rounded-lg w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-950"
                             />
                         </div>
